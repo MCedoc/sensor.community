@@ -21,7 +21,7 @@ The [ID] can also be searched for in the text on the page [https://www.madavi.de
 * Check on your own router if the sensor is logged into the network, then remember the IP 
     * alternatively use "Discovery" in the [flashtool](https://github.com/opendata-stuttgart/airrohr-firmware-flasher/)
     * If yes: connect to the sensor via IP with a browser `http://[ip-of-the-sensor]/` , the interface should appear 
-    * If no: the ESP has problems, e.g. power supply insufficient, reboot loop or similar
+    * If no: the NodeMCU (ESP8266) has problems, e.g. power supply insufficient, reboot loop or similar
 * Connect USB to a computer and view the log 
     * Track text on serial interface with serial terminal program (Settings: baud 9600, 8N1)
         * Linux: screen, minicom, cutecom; Windows: Tera Term; MacOS: screen, minicom, ...
@@ -31,6 +31,6 @@ The [ID] can also be searched for in the text on the page [https://www.madavi.de
 ### Electronics problems?
 * Remove sensor electronics from the housing and observe
 * Check/replace power supply again
-    * does ESP flash shortly after reboot?
+    * does NodeMCU (ESP8266) flash shortly after reboot?
     * SDS011: red LED/fan on after reboot?
     * check/replace the cables to the sensors again
